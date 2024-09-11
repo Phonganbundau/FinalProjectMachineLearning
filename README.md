@@ -1,11 +1,17 @@
 
-# PDF Question Answering Application with RAG
+## Building a legal advisory system using the RAG method
+The aim of this project is to develop an innovative legal advisory system that utilizes the Retrieval-Augmented Generation (RAG) approach. This technology combines the power of information retrieval with advanced natural language generation techniques to provide accurate, contextually relevant legal advice.
 
-This application provides a question-answering system for PDF and text files using a retrieval-augmented generation (RAG) approach powered by Hugging Face models and custom Chainlit utilities.
+## Key Objectives:
+
+Integration of Legal Databases: The system will integrate comprehensive legal databases that contain statutes, case law, and doctrinal writings. This foundational data will support the retrieval component of the RAG system, allowing it to access a wide range of legal texts and precedents.
+
+Implementation of RAG Technology: Utilizing the RAG framework, the system will generate responses to legal queries by retrieving relevant information from its database and then using a generative model to synthesize this information into coherent, actionable advice. This method ensures that the advice is both accurate and contextually tailored to the user's specific situation.
+
+User-Friendly Interface: The system will feature a user-friendly interface that allows users to easily input their legal questions and receive clear, understandable legal advice. The interface will be designed to accommodate both legal professionals and the general public, making legal advice more accessible to a broader audience.
 
 ## Features
 
-- **File Processing**: Supports text and PDF files, extracting content and generating searchable vector databases.
 - **Advanced Question Answering**: Leverages a conversational retrieval chain to provide contextual answers based on the content of uploaded documents.
 - **Vector Database Management**: Manages a persistent vector database for efficient query retrieval.
 - **Local Language Model**: Utilizes a locally stored language model optimized for Vietnamese.
@@ -25,23 +31,17 @@ Ensure that you also have the necessary model files downloaded or accessible loc
 1. **Start the Application**:
    Run the application script in your terminal. The application will prompt you to upload a PDF or text file if no vector database exists.
    
-2. **Upload a File**:
-   Follow the on-screen instructions to upload a file. The application supports `.txt` and `.pdf` formats.
-
-3. **Ask Questions**:
+2. **Ask Questions**:
    Once the file is processed and the vector database is ready, you can start asking questions related to the document's content.
 
 ## Application Workflow
 
-1. **File Upload**:
-   - Users are prompted to upload a file.
-   - The application processes the file and creates or updates the vector database.
 
-2. **Question Answering**:
+1. **Question Answering**:
    - The system retrieves information from the vector database to provide answers.
    - Users can interact with the system through a chat interface to ask further questions.
 
-3. **Session Management**:
+2. **Session Management**:
    - The session maintains the state of the vector database and conversation history.
    - Responses are generated using a local language model, ensuring fast and relevant outputs.
 
