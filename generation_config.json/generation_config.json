@@ -1,0 +1,8 @@
+{
+  "eos_token_id": 2,
+  "max_new_tokens": 50,
+  "temperature": null,
+  "top_k": null,
+  "top_p": null,
+  "transformers_version": "4.44.2"
+}
